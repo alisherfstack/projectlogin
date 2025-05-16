@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
-app.use(cors);
-dotenv.config();
 
 const app = express(); // ✅ AVVAL app yaratamiz
 
+app.use(cors);
+dotenv.config();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
